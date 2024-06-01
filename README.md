@@ -25,11 +25,11 @@ This Django project provides an API to access the computer configurations collec
 
 - For Windows:
 
-    venv\Scripts\activate
+    ```venv\Scripts\activate```
 
 - For Unix or MacOS:
 
-    source venv/bin/activate
+    ```source venv/bin/activate```
 
 6. Install the required packages listed in the requirements.txt file:
 
@@ -53,7 +53,7 @@ This Django project provides an API to access the computer configurations collec
    }
 ```
 
-   However, your path may be different depending on the folders where you store your projects.
+     ##### However, your path may be different depending on the folders where you store your projects.
 
 8. Start the Django project by running the following command:
 
@@ -69,7 +69,7 @@ This Django project provides an API to access the computer configurations collec
 
    ```http://localhost:8000/api/computers/?gpu=NVIDIA&motherboard=Intel``` - Filters configurations by GPU and motherboard.
 
-You can customize the filtering criteria and parameters based on your specific requirements for a computer configuration.
+       You can customize the filtering criteria and parameters based on your specific requirements for a computer configuration.
 
 # Notes
 
