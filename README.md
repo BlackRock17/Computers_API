@@ -53,7 +53,7 @@ This Django project provides an API to access the computer configurations collec
    }
 ```
 
-    However, your path may be different depending on the folders where you store your projects.
+However, your path may be different depending on the folders where you store your projects.
 
 8. Start the Django project by running the following command:
 
