@@ -38,10 +38,15 @@ This Django project provides an API to access the computer configurations collec
    In my case, the database settings look like this:
    
    DATABASES = {
+
        'default': {
+
            'ENGINE': 'django.db.backends.sqlite3',
+
            'NAME': 'D:\scrapy_project\Collection_Data_Scrapy\data_collection\data_collection\spiders\computers.db',
+
        }
+
    }
 
    However, your path may be different depending on the folders where you store your projects.
@@ -53,8 +58,11 @@ This Django project provides an API to access the computer configurations collec
 9. You can now access the computer configurations as JSON at the following URLs:
 
    ```http://localhost:8000/api/computers/``` - Returns all computer configurations.
+
    ```http://localhost:8000/api/computers/?processor=Intel&ram=8GB``` - Filters configurations by processor and RAM.
+
    ```http://localhost:8000/api/computers/?processor=AMD&ram=16GB``` - Filters configurations by processor and RAM.
+
    ```http://localhost:8000/api/computers/?gpu=NVIDIA&motherboard=Intel``` - Filters configurations by GPU and motherboard.
 
 You can customize the filtering criteria and parameters based on your specific requirements for a computer configuration.
@@ -67,6 +75,6 @@ You can customize the filtering criteria and parameters based on your specific r
 
 2. In the views.py file, there is commented code at the bottom of the 'def get_queryset(self):' method. This code can be used for "OR" clauses, while the current implementation uses "AND" clauses by default, as per the task requirements.
 
-## If you have any questions, feel free to contact me via email at lyyubo@gmail.com or by phone at 0895028398.
+### If you have any questions, feel free to contact me via email at lyyubo@gmail.com or by phone at 0895028398.
 
-## Thank you!
+### Thank you!
