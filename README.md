@@ -24,9 +24,11 @@ This Django project provides an API to access the computer configurations collec
 5. Then activate the virtual environment:
 
 - For Windows:
+
     venv\Scripts\activate
 
 - For Unix or MacOS:
+
     source venv/bin/activate
 
 6. Install the required packages listed in the requirements.txt file:
@@ -37,6 +39,7 @@ This Django project provides an API to access the computer configurations collec
    Set the 'NAME' field to the path of the computers.db file that was created in the spiders folder after running the Scrapy project and collecting the computer configuration data.
    In my case, the database settings look like this:
    
+```
    DATABASES = {
 
        'default': {
@@ -48,6 +51,7 @@ This Django project provides an API to access the computer configurations collec
        }
 
    }
+```
 
    However, your path may be different depending on the folders where you store your projects.
 
